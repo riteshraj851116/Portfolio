@@ -1,0 +1,774 @@
+/* ===========================
+   HERO SECTION
+=========================== */
+
+
+.hero{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px 7% 0;
+
+    background:#050505;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+
+
+
+
+/* ===========================
+   3D CODE BACKGROUND
+=========================== */
+
+
+.hero-background{
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    z-index:0;
+
+
+    opacity:.55;
+
+
+}
+
+
+
+.hero-background canvas{
+
+
+    width:100%!important;
+
+
+    height:100%!important;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===========================
+   LEFT SIDE
+=========================== */
+
+
+.hero-left{
+
+
+    width:45%;
+
+
+    position:relative;
+
+
+    z-index:5;
+
+
+}
+
+
+
+
+
+
+.hero-role{
+
+
+    color:#c6a86b;
+
+
+    font-size:14px;
+
+
+    letter-spacing:6px;
+
+
+    margin-bottom:25px;
+
+
+    text-transform:uppercase;
+
+
+}
+
+
+
+
+
+
+.hero-title{
+
+
+    color:white;
+
+
+    font-size:95px;
+
+
+    line-height:.85;
+
+
+    font-weight:900;
+
+
+    letter-spacing:8px;
+
+
+    margin:0 0 30px;
+
+
+    text-shadow:
+
+
+    2px 2px 0 #444,
+
+    5px 5px 0 #111;
+
+
+}
+
+
+
+
+
+
+
+.hero-desc{
+
+
+    color:#aaa;
+
+
+    font-size:18px;
+
+
+    line-height:1.8;
+
+
+    max-width:520px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===========================
+   CONTACT BUTTON
+=========================== */
+
+
+.hero-btn{
+
+
+    margin-top:45px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:18px;
+
+
+    padding:16px 34px;
+
+
+    width:max-content;
+
+
+    border-radius:50px;
+
+
+    background:#c6a86b;
+
+
+    color:#050505;
+
+
+    text-decoration:none;
+
+
+    font-size:17px;
+
+
+    font-weight:700;
+
+
+    letter-spacing:1px;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+
+
+
+
+.hero-btn::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+
+    left:-120%;
+
+
+    width:120%;
+
+
+    height:100%;
+
+
+    background:
+
+
+    linear-gradient(
+
+        120deg,
+
+        transparent,
+
+        rgba(255,255,255,.8),
+
+        transparent
+
+    );
+
+
+    transition:.7s;
+
+
+}
+
+
+
+
+
+
+
+.hero-btn:hover::before{
+
+
+    left:120%;
+
+
+}
+
+
+
+
+
+
+
+.hero-btn:hover{
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+
+
+    0 15px 40px rgba(198,168,107,.4);
+
+
+}
+
+
+
+
+
+
+
+.hero-btn span{
+
+
+    width:38px;
+
+
+    height:38px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    background:#050505;
+
+
+    color:white;
+
+
+    border-radius:50%;
+
+
+    font-size:22px;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+
+
+
+.hero-btn:hover span{
+
+
+    transform:translateX(8px);
+
+
+    background:white;
+
+
+    color:black;
+
+
+}
+
+
+
+
+
+.hero-btn:active{
+
+
+    background:white;
+
+
+    transform:scale(.95);
+
+
+}
+
+
+
+
+
+
+.hero-btn:active span{
+
+
+    background:#c6a86b;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+
+.hero-right{
+
+
+    width:55%;
+
+
+    height:100vh;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:flex-end;
+
+
+    position:relative;
+
+
+    z-index:5;
+
+
+}
+
+
+
+
+
+
+.hero-right::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:520px;
+
+
+    height:520px;
+
+
+    border-radius:50%;
+
+
+    border:1px solid rgba(198,168,107,.25);
+
+
+    top:45%;
+
+
+    left:50%;
+
+
+    transform:translate(-50%,-50%);
+
+
+}
+
+
+
+
+
+
+
+.hero-right::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:380px;
+
+
+    height:380px;
+
+
+    border-radius:50%;
+
+
+    border:1px dashed rgba(255,255,255,.15);
+
+
+    top:45%;
+
+
+    left:50%;
+
+
+    transform:translate(-50%,-50%);
+
+
+    animation:rotate 25s linear infinite;
+
+
+}
+
+
+
+
+
+
+
+@keyframes rotate{
+
+
+from{
+
+
+    transform:
+
+    translate(-50%,-50%)
+
+    rotate(0deg);
+
+
+}
+
+
+to{
+
+
+    transform:
+
+    translate(-50%,-50%)
+
+    rotate(360deg);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===========================
+   BACK TEXT
+=========================== */
+
+
+.back-text{
+
+
+    position:absolute;
+
+
+    top:40%;
+
+
+    left:50%;
+
+
+    transform:translate(-50%,-50%);
+
+
+    font-size:220px;
+
+
+    font-weight:900;
+
+
+    letter-spacing:20px;
+
+
+    color:rgba(255,255,255,.05);
+
+
+    white-space:nowrap;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===========================
+   IMAGE
+=========================== */
+
+
+.hero-image{
+
+
+    height:120vh;
+
+
+    width:auto;
+
+
+    object-fit:contain;
+
+
+    position:relative;
+
+
+    z-index:3;
+
+
+    filter:
+
+
+    drop-shadow(
+
+    0 30px 60px rgba(0,0,0,.8)
+
+    );
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:1000px){
+
+
+.hero{
+
+
+    flex-direction:column;
+
+
+    padding:120px 25px 40px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+.hero-left{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+.hero-title{
+
+
+    font-size:60px;
+
+
+}
+
+
+
+
+.hero-desc{
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+.hero-btn{
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+
+
+.hero-right{
+
+
+    width:100%;
+
+
+    height:auto;
+
+
+}
+
+
+
+
+
+.hero-image{
+
+
+    height:700px;
+
+
+}
+
+
+
+
+
+.back-text{
+
+
+    font-size:80px;
+
+
+}
+
+
+
+}

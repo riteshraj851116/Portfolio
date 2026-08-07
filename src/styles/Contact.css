@@ -1,0 +1,149 @@
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:120px 8%;
+    background:#050505;
+}
+
+.contact-box{
+
+    width:900px;
+
+    padding:70px;
+
+    border-radius:35px;
+
+    background:#0d0d0d;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+}
+
+.contact-box span{
+
+    color:#c6a86b;
+
+    letter-spacing:5px;
+
+    font-size:14px;
+
+}
+
+.contact-box h2{
+
+    font-size:60px;
+
+    margin:20px 0;
+
+}
+
+.contact-box p{
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+.contact-links{
+
+    margin-top:50px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.contact-links a{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    font-size:18px;
+
+}
+
+.contact-links a svg{
+
+    font-size:24px;
+
+    color:#c6a86b;
+
+}
+
+.contact-links a:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#c6a86b;
+
+    background:#181818;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.contact{
+
+padding:80px 20px;
+
+}
+
+.contact-box{
+
+padding:40px 25px;
+
+}
+
+.contact-box h2{
+
+font-size:38px;
+
+}
+
+.contact-links a{
+
+font-size:16px;
+
+padding:16px;
+
+}
+
+}
