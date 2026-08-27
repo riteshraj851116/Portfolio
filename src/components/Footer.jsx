@@ -4,22 +4,26 @@ import { FaGithub, FaLinkedin, FaHeart } from "react-icons/fa";
 function Footer() {
   return (
     <footer className="footer">
+
       <div className="footer-logo">
         RR
       </div>
 
       <div className="footer-center">
+
         <h3>
           Thanks For Visiting.
         </h3>
 
         <p>
           Designed & Developed by
-          <span> Ritesh Raj</span>
+          <span> Ritesh Raj Singh</span>
         </p>
+
       </div>
 
       <div className="footer-social">
+
         <a
           href="https://github.com/riteshraj851116"
           target="_blank"
@@ -35,13 +39,17 @@ function Footer() {
         >
           <FaLinkedin />
         </a>
+
       </div>
 
       <div className="copyright">
+
         Made with
-        <FaHeart style={{ color: "#c6a86b", margin: "0 5px" }} />
+        <FaHeart />
         in India © 2026
+
       </div>
+
     </footer>
   );
 }

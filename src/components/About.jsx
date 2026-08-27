@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 function About() {
   return (
     <section id="about" className="about">
+
       <motion.div
         className="about-left"
         initial={{ opacity: 0, x: -80 }}
@@ -16,7 +17,7 @@ function About() {
         <h2>
           Passion Meets
           <br />
-          Engineering.
+          Technology.
         </h2>
       </motion.div>
 
@@ -28,35 +29,40 @@ function About() {
         viewport={{ once: true }}
       >
         <p>
-          I'm <strong>Ritesh Raj</strong>, a Computer Science undergraduate at <strong>Galgotias University (2023 – 2027)</strong> with a <strong>7.3 CGPA</strong>. As a passionate Full Stack Developer, I specialize in architecting scalable MERN stack web platforms, real-time WebSocket systems, and clean RESTful APIs.
+          I'm <strong>Ritesh Raj Singh</strong>, a MERN Stack Developer who
+          enjoys building modern, responsive and interactive web applications.
+          I focus on clean UI, smooth animations and creating projects that are
+          practical as well as visually appealing.
         </p>
 
         <p>
-          Equipped with 200+ solved DSA problems in Java and 150+ hours of full-stack training from CodeHelp, I focus on building efficient, responsive, and performance-optimized digital experiences from concept to cloud deployment.
+          My goal is to build products that not only work efficiently but also
+          provide an exceptional user experience. I'm continuously learning new
+          technologies and improving my skills in React, Node.js, Express,
+          MongoDB and modern frontend development.
         </p>
 
         <div className="about-info">
+
           <div>
-            <h3>3+</h3>
-            <span>Full-Stack Apps</span>
+            <h3>15+</h3>
+            <span>Projects</span>
           </div>
 
           <div>
-            <h3>200+</h3>
-            <span>DSA Solved</span>
+            <h3>10+</h3>
+            <span>Technologies</span>
           </div>
 
           <div>
-            <h3>7.3</h3>
-            <span>B.Tech CGPA</span>
+            <h3>2026</h3>
+            <span>Graduate</span>
           </div>
 
-          <div>
-            <h3>2027</h3>
-            <span>Graduation</span>
-          </div>
         </div>
+
       </motion.div>
+
     </section>
   );
 }
