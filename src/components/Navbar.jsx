@@ -2,11 +2,9 @@ import "../styles/Navbar.css";
 import { useEffect, useState } from "react";
 
 function Navbar() {
-
   const [active, setActive] = useState("home");
 
   useEffect(() => {
-
     const sections = document.querySelectorAll("section");
 
     const observer = new IntersectionObserver(
@@ -18,7 +16,7 @@ function Navbar() {
         });
       },
       {
-        threshold: 0.5,
+        threshold: 0.3,
       }
     );
 
@@ -27,19 +25,15 @@ function Navbar() {
     return () => {
       sections.forEach((section) => observer.unobserve(section));
     };
-
   }, []);
 
   return (
-
     <nav className="navbar">
-
       <div className="logo">
         Ritesh Raj.
       </div>
 
       <ul className="nav-links">
-
         <li>
           <a
             href="#home"
@@ -67,7 +61,14 @@ function Navbar() {
           </a>
         </li>
 
-   
+        <li>
+          <a
+            href="#projects"
+            className={active === "projects" ? "active" : ""}
+          >
+            Projects
+          </a>
+        </li>
 
         <li>
           <a
@@ -77,11 +78,8 @@ function Navbar() {
             Contact
           </a>
         </li>
-
       </ul>
-
     </nav>
-
   );
 }
 

@@ -1,30 +1,26 @@
 import "../styles/Contact.css";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 function Contact() {
   return (
     <section id="contact" className="contact">
-
       <motion.div
         className="contact-box"
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: .8 }}
+        transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-
         <span>GET IN TOUCH</span>
 
         <h2>Let's Build Something Amazing.</h2>
 
         <p>
-          Looking for internships, freelance work or exciting collaborations.
-          Feel free to connect with me.
+          Open to full-time opportunities, internships, and engineering collaborations. Feel free to reach out directly.
         </p>
 
-        <div className="contact-links">
-
+        <div className="contact-links" style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
           <a
             href="mailto:riteshraj851116@gmail.com"
             target="_blank"
@@ -32,6 +28,13 @@ function Contact() {
           >
             <FaEnvelope />
             <span>riteshraj851116@gmail.com</span>
+          </a>
+
+          <a
+            href="tel:+919709721676"
+          >
+            <FaPhoneAlt />
+            <span>+91-9709721676</span>
           </a>
 
           <a
@@ -51,11 +54,8 @@ function Contact() {
             <FaLinkedin />
             <span>LinkedIn</span>
           </a>
-
         </div>
-
       </motion.div>
-
     </section>
   );
 }
